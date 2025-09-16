@@ -2,6 +2,8 @@ let canvas = document.getElementById('canvas')
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+var io = io.connect("http://localhost:8080/");
+
 let ctx = canvas.getContext("2d")
 
 let x;
